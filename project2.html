@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+       #menu ul {
+  list-style: none;
+  max-width: 400px;
+  margin: auto;
+  padding: 0;
+}
+
+#menu li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(250, 200, 0);
+}
+
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            justify-content: center;
+            padding: 0;
+        }
+
+        button {
+            background-color: #d97706;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor:pointer;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #d97706;
+            color: white;
+        }
+        .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.food-item {
+  border: 1px solid #d97706;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.food-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+    </style>
+    <!-- will redo and go through the code to make it more attractive and appealing to customers and also add more content to the about us section to make it more informative and interesting-->
+    <title>TASTE HEAVEN RESTAURANT</title>
+</head>
+<body>
+  <h1 style="text-align: center;">TASTE HEAVEN RESTAURANT</h1>
+  <p style="text-align: center;">ONE MEAL IS ALL YOU NEED</p>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#opening-hours">Opening Hours</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>WELCOME TO TASTE HEAVEN RESTAURANT</h2>
+      <p>Welcome to Taste Heaven Restaurant, where every meal is made with care and full of flavor, your satisfaction is guaranteed.</p>
+      <!-- i will add more content about the restaurants background and increase it warmth toattracte more customers-->
+       
+    </section>  
+
+      <h2>TODAY'S SPECIAL</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIjkFtCa0iEtbYbWQJjGDIKO1I0mT3xp9NvywVc_LoFA&s=1024" alt="Today's Special" width="489" height="500">
+      <p>Today's special is Waakye, a traditional Ghanaian dish made with rice and beans, served with a variety of sides. Come and enjoy the rich flavors of our special dish!</p>
+      <button type="button" onclick="location.href='#menu'">View Our Menu</button>
+    </section>
+
+    <section id="opening-hours">
+      <h2>OPENING HOURS</h2>
+      <table>
+        <tr>
+        <th>DAYS</th>
+        <th>OPENING HOURS</th>
+        <th>CLOSING HOURS</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>9:00 AM</td>
+        <td>09:00 PM</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>9:00 AM</td>
+        <td>09:00 PM</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>9:00 AM</td>
+        <td>09:00 PM</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>9:00 AM</td>
+        <td>09:00 PM</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>9:00 AM</td>
+        <td>09:00 PM</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>9:00 AM</td>
+        <td>10:00 PM</td>
+      </tr>
+    </table>
+    <!-- i added the required opening and closing timeline for the resturant to make it easy for customers to plan as time is very important to 
+     TAste heaven resturant-->
+  </section>
+
+    <section id="menu">
+      <h2>OUR MENU</h2>
+
+      <p>
+        We offer a variety of delicious dishes to satisfy your cravings.
+        From traditional Ghanaian meals to international cuisine, our menu
+        has something for everyone.
+      </p>
+
+      <h3>Local Dishes</h3>
+
+      <div class="menu-grid">
+        <div class="food-item">
+          <h3>Waakye</h3>
+          <img src="https://eatwithafia.com/wp-content/uploads/2025/02/IMG_8612.jpg"
+               alt="Waakye" loading="lazy">
+          <p>A delicious Ghanaian rice and beans meal served with tasty sides.</p>
+          <p>Price: GH₵60</p>
+        </div>
+
+        <div class="food-item">
+          <h3>Kelewele</h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN-94rdvTinDfEwBLrCPmV2avX40j3oU0yQOUKj3v-UHkeKXfapYzXL-0&amps=10"
+               alt="Kelewele" loading="lazy">
+          <p>Spicy fried plantains, perfect as a snack or tasty side dish.</p>
+          <p>Price: GH₵35</p>
+        </div>
+
+        <div class="food-item">
+          <h3>Kofi Brokeman and Groundnuts</h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFsy7ZoaGzs_xJGVEpL9IF_guvtn-Z1Ye6V_cA02Ha0EruKIbJ1vbojiLu&amps=10"
+               alt="Kofi Brokeman and groundnuts" loading="lazy">
+          <p>A simple and satisfying Ghanaian snack served with groundnuts.</p>
+          <p>Price: GH₵40</p>
+        </div>
+
+        <div class="food-item">
+          <h3>Banku and Tilapia</h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRJcPAgCouxLeZvxu1QrkMpvHkkX115WvLUlVoSEtuQc-lB88Vtb27uEIM&amps=10"
+               alt="Banku and tilapia" loading="lazy">
+          <p>Fermented corn and cassava dough served with grilled tilapia and spicy sauce.</p>
+          <p>Price: GH₵80</p>
+        </div>
+
+        <div class="food-item">
+          <h3>Fufu and Light Soup</h3>
+          <img src="https://uukitchenonline.com/wp-content/uploads/2026/02/Fufu-and-light-soup.png"
+               alt="Fufu and light soup" loading="lazy">
+          <p>Pounded cassava and plantain served with flavourful light soup.</p>
+          <p>Price: GH₵100</p>
+        </div>
+
+        <div class="food-item">
+          <h3>Konkonte and Groundnut Soup</h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQct9g5E2JQn_-bc83nAndOSUbdGldvUak77co8Dg8BEoR5wM78K2UtIO4&amps=10"
+               alt="Konkonte and groundnut soup" loading="lazy">
+          <p>Dried cassava flour served with rich, flavourful groundnut soup.</p>
+          <p>Price: GH₵90</p>
+        </div>
+        <!--i added more food items to the menu section to make it difficult for customers to make a choice-->
+      <h3>Food Categories</h3>
+
+<ul>
+  <li>Local Dishes</li>
+  <li>Soups</li>
+  <li>Grilled Meals</li>
+  <li>Snacks</li>
+  <li>Drinks</li>
+</ul>
+
+</div>
+<h3>Top 5 Popular Meals</h3>
+
+<ol>
+  <li>Waakye</li>
+  <li>Banku and Tilapia</li>
+  <li>Fufu and Light Soup</li>
+  <li>Kelewele</li>
+  <li>Konkonte and Groundnut Soup</li>
+</ol>
+      </div>
+    </section>
+
+    <section id="about">
+        <h2>ABOUT US</h2>
+        <p>
+  Taste Heaven Restaurant is a place where <strong>great food</strong>
+  brings people together. We serve delicious Ghanaian dishes made with
+  fresh ingredients and care.
+</p>
+<!-- add more content about the restaurant's history, values, and mission -->
+<p>
+  Our goal is to give every guest a <em>warm and memorable dining experience</em>.
+  From Waakye to Fufu and Light Soup, every meal is prepared to satisfy
+  your cravings. At Taste Heaven, <mark>every meal is special</mark>.
+</p>
+<img src="taste_heaven_with_sign.png"
+     alt="Inside Taste Heaven Restaurant"width="430" height="350"
+     class="about-image">
+    </section>
+    <section id="contact" class="contact-info">
+        <h2>CONTACT US</h2>
+        <p>We would love to hear from you! Please reach out to us with any questions, comments, or feedback.</p> 
+        <p> contact us on these platforms</p>
+    <button type="button">+233 24 000 0000</button>
+<p>Email: <a href="mailto:info@tastehaven.com">info@tastehaven.com</a></p>
+<p>Location: Accra, Ghana</p>
+        </ul>
+    </section>
+  </main>
+</body>
+</html>
